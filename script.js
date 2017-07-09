@@ -30,7 +30,7 @@ function submitAnswers() {
      //validation
       for(i = 1;i <= total; i++){
       if(eval("q" + i) === null || eval("q" + i)  === "") {
-        alert("you missed question" + i);
+        alert("You missed question " + i);
         return false;
     }
   }
@@ -45,20 +45,19 @@ function submitAnswers() {
     }
     var calculation = ((score/total) * 100).toFixed(2);
     var results = document.getElementById("results");
-    results.innerHTML = "<p>Congrats, you scored " +score+ " out of " +total+ " !</p>"
+    results.innerHTML = "<p>CONGRATS, YOU SCORED " +score+ " OUT OF " +total+ " !!</p>"
 
     if(score > 18) {
-      alert("DAMN WIZ KID!");
+      alert("DAMN WIZ KID! YOU GOT "+calculation+ " % !!");
     } else if (score > 14) {
-      alert("ALRIGHT ALRIGHT ALRIGHT!");
+      alert("ALRIGHT! ALRIGHT1 ALRIGHT! YOU GOT " +calculation+ " % !!");
     } else if(score > 9){
-      alert("NOT TOO BAD!");
+      alert("NOT TOO BAD!, YOU GOT " +calculation+ " % !!");
     } else {
-      alert("KEEPING TRYING, PRACTICE MAKES PERFECT!");
+      alert("KEEPING TRYING, PRACTICE MAKES PERFECT! YOU GOT " +calculation+ " % !!");
+      return false;
     }
 
-    alert("Alrighty, you got " +calculation+ " %  correct!");
-    return false;
 
 
 
