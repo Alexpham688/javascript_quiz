@@ -1,0 +1,47 @@
+body {
+  background-color: #BDFFB7;
+}
+
+.questionBox {
+  margin: 0 auto;
+  border: 2px solid orange;
+  width: 760px;
+  height: auto;
+  background-color:#F6D48A;
+}
+#results {
+  margin: 0 auto;
+  border: 2px solid purple;
+  height: 80px;
+  width: 760px;
+  text-align: center;
+  font-size: 20px;
+  color: #2910FF;
+}
+.scoreText {
+  float:left;
+  /*color: #2910FF;*/
+}
+h3 {
+  margin-left: 10px;
+
+}
+input {
+  margin-left: 20px;
+  margin-top: 5px;
+}
+button{
+  font-size: 15px;
+  border-radius: 10px;
+  background-color: orange;
+  color:white;
+  margin-left: 30px;
+}
+header {
+  border: 2px solid blue;
+  margin: 0 auto;
+  width: 760px;
+  height:auto;
+  text-align: center;
+  background-color:#5468FF;
+}

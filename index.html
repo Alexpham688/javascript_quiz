@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Javascript Questionare</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>21 Random Javascript Questions</h1>
+      </header>
+      <div class="questionBox">
+        <p class="scoreText">score box</p>
+          <div id="results"></div>
+          <form name="quizform" onsubmit="return submitAnswers()">
+
+            <h3>1.&nbsp; What is an JS object?</h3>
+              <input value="a" type="radio" id="q1a" name="q1"> a.&nbsp; an entity having state and behavior(properties and methods). <br>
+              <input value="b" type="radio" id="q1b" name="q1"> b.&nbsp; a material thing that can be seen and touched.<br>
+              <input value="c" type="radio" id="q1c" name="q1"> c.&nbsp; an oversized misplaced variable  <br>
+              <input value="d" type="radio" id="q2d" name="q1"> d.&nbsp; a radioactive demon goblin<br>
+
+
+              <h3>2.&nbsp; How does the &lt;Array()&gt; differ from <[]> while creating an array?</h3>
+                <input value="a" type="radio" id="q2a" name="q2">a.&nbsp;<[]> is the female version of &lt;Array()&gt; <br>
+                <input value="b" type="radio" id="q2b" name="q2">b.&nbsp; only<Array()> can hold numbers<br>
+                <input value="c" type="radio" id="q2c" name="q2">c.&nbsp;nothing, they are exactly the same<br>
+                <input value="d" type="radio" id="q2d" name="q2">d.&nbsp;they differ when the input argument is of integer type<br>
+
+               <h3>3.&nbsp;What is a scope in javascript?</h3>
+                  <input value="a" type="radio" id="q3a" name="q3">a.&nbsp;determines whether you add or subtract inside the variables of objects<br>
+                  <input value="b" type="radio" id="q3b" name="q3">b.&nbsp;determines the accessibility of variables, objects, and functions in particular part of your code<br>
+                  <input value="c"type="radio" id="q3c" name="q3">c.&nbsp;determines whether you have functions inside variables<br>
+                  <input value="d" type="radio" id="q3d" name="q3">d.&nbsp;all of the above<br>
+
+                <h3>4.&nbsp;What is operator precedence? <this>?</h3>
+                  <input value="a" type="radio" id="q4a" name="q4">a.&nbsp; operators that handle incoming emergency calls<br>
+                  <input value="b" type="radio" id="q4b" name="q4">b.&nbsp; operators with lower precedence are evaluated first <br>
+                  <input value="c" type="radio" id="q4c" name="q4">c.&nbsp; operators with higher precedence are evaluated first<br>
+                  <input value="d" type="radio" id="q4d" name="q4">d.&nbsp; operators that can only  concatenate<br>
+
+                <h3>5.&nbsp;What is prototype property?</h3>
+                  <input value="a" type="radio" id="q5" name="q5">a.&nbsp;allows you to add variables to an object</br>
+                  <input value="b" type="radio" id="q5" name="q5">b.&nbsp;allows you to add properties and methods to an object.<br>
+                  <input value="c" type="radio" id="q5" name="q5">c.&nbsp;allows you to show off your property<br>
+                  <input value="d" type="radio" id="q5" name="q5">d.&nbsp;all of the above<br>
+
+                <h3>6.&nbsp;What is closure?</h3>
+                  <input value="a" type="radio" id="q6a" name="q6">a.&nbsp;a function defined inside another function<br>
+                  <input value="b" type="radio" id="q6b" name="q6">b.&nbsp;a scope variable<br>
+                  <input value="c" type="radio" id="q6c" name="q6">c.&nbsp;an experiment like shrodinger's cat<br>
+                  <input value="d" type="radio" id="q6d" name="q6">d.&nbsp;an object inside another object<br>
+
+                <h3>7.&nbsp;What is an anonymous function?</h3>
+                  <input class="answer" type="radio" id="q7a" name="q7">a.&nbsp;are functions that are dynamically declared at runtime.<br>
+                  <input class="answer" type="radio" id="q7b" name="q7">b.&nbsp;are functions that have no name<br>
+                  <input class="answer" type="radio" id="q7c" name="q7">c.&nbsp;are functions that are stored in a program file<br>
+                  <input class="answer" type="radio" id="q7d" name="q7">d.&nbsp;all of the above<br>
+
+                <h3>8.&nbsp;What is &lt;this&gt; in JS?</h3>
+                  <input value="a" type="radio" id="q8a" name="q8">a.&nbsp;refers to multiple variables in a function<br>
+                  <input value="b" type="radio" id="q8b" name="q8">b.&nbsp;refers to an object related to the class<br>
+                  <input value="c" type="radio" id="q8c" name="q8">c.&nbsp;refers to an object which owns the method<br>
+                  <input value="d" type="radio" id="q8d" name="q8">d.&nbsp;refers to variables checking values<br>
+
+                <h3>9.&nbsp;What is prototypal inheritance?</h3>
+                  <input value="a" type="radio" id="q9a" name="q9">a.&nbsp; when a variable inherits from another variable<br>
+                  <input value="b" type="radio" id="q9b" name="q9">b.&nbsp; when an object inherits from another object. <br>
+                  <input value="c" type="radio" id="q9c" name="q9">c.&nbsp; when someone dies and bequeths you <br>
+                  <input value="d" type="radio" id="q9d" name="q9">d.&nbsp;when objects inherit from a variable<br>
+
+                <h3>10.&nbsp;What is an asynchronous programming?</h3>
+                  <input value="a" type="radio" id="q10a" name="q10">a.&nbsp;a single program thread can handle many concurrent operations<br>
+                  <input value="b" type="radio" id="q10b" name="q10">b.&nbsp;a single program thread that handles one operation at a time<br>
+                  <input value="c" type="radio" id="q10c" name="q10">c.&nbsp;a single program thread that can stitch up pocket holes<br>
+                  <input value="d" type="radio" id="10d" name="q10">d.&nbsp;runs one program, when that program is finished then starts the other<br>
+
+                <h3>11.&nbsp;What do JS cookies contain?</h3>
+                  <input value="a" type="radio" id="q11a" name="q11">a.&nbsp;a name-value pair cotaining actually data<br>
+                  <input value="b" type="radio" id="q11b" name="q11">b.&nbsp;an expiry date after which the cookie is no longer valid<br>
+                  <input value="c" type="radio" id="q11c" name="q11">c.&nbsp;the domain and path of the server it should be sent to<br>
+                  <input value="d" type="radio" id="q11d" name="q11">d.&nbsp;all of the above<br>
+
+                <h3>12.&nbsp;How do you create cookies?</h3>
+                  <input value="a" type="radio" id="q11a" name="q12">a.&nbsp;assign a variable to the &lt;document.cookie&gt; variable<br>
+                  <input value="d" type="radio" id="q11b" name="q12">b.&nbsp;assign an oven temperature of 375 degrees<br>
+                  <input value="c" type="radio" id="q11c" name="q12">c.&nbsp;assign a string value to the &lt;document.cookie&gt; object.<br>
+                  <input value="d" type="radio" id="q11d" name="q12">d.&nbsp;assign a string value to the &lt;cookie.document&gt; object<br>
+
+                <h3>13.&nbsp;What are the different types of objects?</h3>
+                  <input value="a" type="radio" id="q13" name="q13">a.&nbsp;window object<br>
+                  <input value="b" type="radio" id="q13" name="q13">b.&nbsp;document object<br>
+                  <input value="c" type="radio" id="q13" name="q13">c.&nbsp;form object<br>
+                  <input value="d" type="radio" id="q13" name="q13">d.&nbsp;all of the above<br>
+
+                <h3>14.&nbsp;What is a strict mode?</h3>
+                  <input value="a" type="radio" id="q14a" name="q14">a.&nbsp;imposes a layer of constraint on JavaScript<br>
+                  <input value="b" type="radio" id="q14b" name="q14">b.&nbsp;sets the Javascript function wild<br>
+                  <input value="c" type="radio" id="q14c" name="q14">c.&nbsp;creates a single global variable <br>
+                  <input value="d" type="radio" id="q14d" name="q14">d.&nbsp;refers to the index of the form<br>
+
+                <h3>15.&nbsp;What is an encodeURI() function?</h3>
+                  <input value="a" type="radio" id="q15a" name="q15">a.&nbsp;a function is used to encode a URI<br>
+                  <input value="b" type="radio" id="q15b" name="q15">b.&nbsp;a function encodes all special characters, except these < , / ? : @ & = + $ #> <br>
+                  <input value="c" type="radio" id="q15c" name="q15">c.&nbsp;the decodeURI() function is used to decode a URI.<br>
+                  <input value="d" type="radio" id="q15d" name="q15">d.&nbsp;all of the above<br>
+
+                <h3>16.&nbsp;How does variable hoisting take place?</h3>
+                  <input value="a" type="radio" id="q16a" name="q16">a.&nbsp;a variable that has no value after its been used<br>
+                  <input value="b" type="radio" id="q16b" name="q16">b.&nbsp;a variable that can be declared after its been used<br>
+                  <input value="c" type="radio" id="q16c" name="q16">c.&nbsp;a variable that transforms into an object<br>
+                  <input value="d" type="radio" id="q16d" name="q16">d.&nbsp;all of the above<br>
+
+                <h3>17.&nbsp;How will you replace all occurrences in string?</h3>
+                  <input value="a" type="radio" id="q17a" name="q17">a.&nbsp; we can use the <repulse()> method to substitute any string <br>
+                  <input value="b" type="radio" id="q17b" name="q17">b.&nbsp;wecan use the <repell()> method to substitute any string<br>
+                  <input value="c" type="radio" id="q17c" name="q17">c.&nbsp;we can use String’s <replace()> method to substitute any string<br>
+                  <input value="d" type="radio" id="q17d" name="q17">d.&nbsp;we can use the <repay()> method to substitute any string<br>
+
+                <h3>18.&nbsp;What is an event handler?</h3>
+                  <input value="a" type="radio" id="q18a" name="q18">a.&nbsp;are functions that bind to a specific HTML DOM event<br>
+                  <input value="b" type="radio" id="q18b" name="q18">b.&nbsp;are expressions that bind to HTML DOM event<br>
+                  <input value="c" type="radio" id="q18c" name="q18">c.&nbsp;are variables that replace functions<br>
+                  <input value="d" type="radio" id="q18d" name="q18">d.&nbsp;are objects that have more than one function<br>
+
+                <h3>19.&nbsp;What is the difference between var x = 1 and x = 1? </h3>
+                  <input value="a" type="radio" id="q19a" name="q19">a.&nbsp;former creates a local variable and latter creates a global.<br>
+                  <input value="b" type="radio" id="q19b" name="q19">b.&nbsp;former creates a global and latter creates a local<br>
+                  <input value="c" type="radio" id="q19c" name="q19">c.&nbsp;no difference, both are local variables<br>
+                  <input value="d" type="radio" id="q19d" name="q19">d.&nbsp;variables are just variables, who cares<br>
+
+                <h3>20.&nbsp;How can we empty an array?</h3>
+                  <input value="a" type="radio" id="q20a" name="q20">a.&nbsp;array.length = 0;<br>
+                  <input value="b" type="radio" id="q20b" name="q20">b.&nbsp;arry.splice(0, array.length);<br>
+                  <input value="c" type="radio" id="q20c" name="q20">c.&nbsp;array = [];<br>
+                  <input value="d" type="radio" id="q20d" name="q20">d.&nbsp;all of the above<br>
+
+                <h3>21.&nbsp;What is the parseInt() function?</h3>
+                  <input value="a" type="radio" id="q21a" name="q21">a.&nbsp;function that parses an integer and returns a string<br>
+                  <input value="b" type="radio" id="q21b" name="q21">b.&nbsp;function that parses a string and returns an integer<br>
+                  <input value="c" type="radio" id="q21c" name="q21">c.&nbsp;function that returns an object into a integer<br>
+                  <input value="d" type="radio" id="q21d" name="q21">d.&nbsp;all of the above<br>
+              </form>
+              <br></br>
+              <button type="submit">Submit Answers</button>
+        </div>
+        <footer>
+          <p>Copyright &copy; 2017, All Rights reserve by AP.</p>
+        </footer>
+    </div>
+
+
+  <script src="script.js"></script>
+  </body>
+</html>
