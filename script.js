@@ -45,11 +45,11 @@ function submitAnswers() {
     }
     var calculation = ((score/total) * 100).toFixed(2);
     var results = document.getElementById("results");
-    results.innerHTML = "<h3>Congrats, you scored <span>"+score+ "</span> out of <span>" +total+ "</span> !</h3>"
+    results.innerHTML = "<p>Congrats, you scored " +score+ " out of " +total+ " !</p>"
 
     if(score > 18) {
       alert("DAMN WIZ KID!");
-    } else if (score > 15) {
+    } else if (score > 14) {
       alert("ALRIGHT ALRIGHT ALRIGHT!");
     } else if(score > 9){
       alert("NOT TOO BAD!");
@@ -57,7 +57,7 @@ function submitAnswers() {
       alert("KEEPING TRYING, PRACTICE MAKES PERFECT!");
     }
 
-    alert("Alrighty, you got " +calculation+ " % !");
+    alert("Alrighty, you got " +calculation+ " %  correct!");
     return false;
 
 
